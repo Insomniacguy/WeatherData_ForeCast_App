@@ -13,11 +13,7 @@ options = st.selectbox("Select data to view", ("Temperature", "Sky"))
 st.subheader(f"{options} for the next {days} days in {place}")
 
 
-def get_data(days):
-    dates = ["2024-04-22", "2024-04-23", "2024-04-24"]
-    temps = [4, 6, 10]
-    temps = [days * i for i in temps]
-    return dates, temps
+def get_data(days, place, options)
 
 
 # returns tuple of lists
